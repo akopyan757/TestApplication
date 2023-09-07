@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/transactionListFragment">
+
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.techwings.myapplication.ui.list.TransactionListFragment"
+        android:label="TransactionListFragment"
+        tools:layout="@layout/fragment_transaction_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <action
+            android:id="@+id/action_details"
+            app:destination="@id/transactionDetailsFragment">
+            <argument
+                android:name="id"
+                app:argType="long"
+                android:defaultValue="-1L"/>
+        </action>
+        <action
+            android:id="@+id/action_create"
+            app:destination="@id/transactionCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionDetailsFragment"
+        android:name="com.techwings.myapplication.ui.details.TransactionDetailsFragment"
+        android:label="TransactionDetailsFragment"
+        tools:layout="@layout/fragment_transaction_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <fragment
+        android:id="@+id/transactionCreateFragment"
+        android:name="com.techwings.myapplication.ui.create.TransactionCreateFragment"
+        android:label="TransactionCreateFragment"
+        tools:layout="@layout/fragment_transaction_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</navigation>

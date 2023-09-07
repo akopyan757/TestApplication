@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="toolbar_list_title">Список транзакций</string>
+    <string name="toolbar_details_title">Детали транзакции</string>
+    <string name="toolbar_new_title">Новая транзакция</string>
+    <string name="todo">TODO</string>
+    <string name="transaction_date">Дата перевода</string>
+    <string name="transaction_sum">Сумма транзакции</string>
+    <string name="transaction_name">ФИО получателя</string>
+    <string name="transaction_surname">Фамилия получателя</string>
+    <string name="transaction_firstname">Имя получателя</string>
+    <string name="transaction_phone_number">Номер телефона получателя</string>
+    <string name="transaction_bank_card">Номер банковской карты</string>
+    <string name="save">Сохранить</string>
+</resources>
